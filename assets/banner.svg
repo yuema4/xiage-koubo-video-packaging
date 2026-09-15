@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="420" viewBox="0 0 1600 420" role="img" aria-label="Xiage Koubo Video Packaging">
+  <rect width="1600" height="420" fill="#08111d"/>
+  <rect x="56" y="52" width="1488" height="316" fill="#0d1d2d" stroke="#55dcff" stroke-width="2"/>
+  <rect x="56" y="52" width="16" height="316" fill="#55dcff"/>
+  <rect x="1532" y="52" width="12" height="316" fill="#ffad52"/>
+  <g fill="none" stroke="#55dcff" stroke-width="2" opacity=".72">
+    <path d="M102 116h190"/>
+    <path d="M102 128h96"/>
+    <path d="M102 328h1330"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="102" y="102" fill="#80ffb0" font-size="18" font-weight="700" letter-spacing="4">CODEX SKILL / VIDEO PACKAGING</text>
+    <text x="102" y="213" fill="#f4fbff" font-size="72" font-weight="800">Xiage Koubo</text>
+    <text x="102" y="290" fill="#55dcff" font-size="72" font-weight="800">Video Packaging</text>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">
+    <rect x="1128" y="150" width="350" height="48" fill="#122c40" stroke="#55dcff"/>
+    <text x="1156" y="181" fill="#eafcff">SCRIPT / SRT / TALKING HEAD</text>
+    <rect x="1128" y="214" width="350" height="48" fill="#2d2415" stroke="#ffad52"/>
+    <text x="1156" y="245" fill="#ffca86">STATIC REVIEW BEFORE MOTION</text>
+    <rect x="1128" y="278" width="350" height="48" fill="#142817" stroke="#80ffb0"/>
+    <text x="1156" y="309" fill="#baffcf">MP4 / PRORES 4444 ALPHA MOV</text>
+  </g>
+</svg>
