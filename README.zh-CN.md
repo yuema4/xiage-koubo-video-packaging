@@ -59,7 +59,7 @@
 语义分割，生成动效表
         |
         v
-生成约 20 张静态预览图
+按时长生成静态预览（每分钟约15组）
         |
         v
 用户审核文字、顺序和画面
@@ -69,6 +69,27 @@ HyperFrames 动画或透明底 MOV
 ```
 
 新任务没有指定风格时，Skill 不会默认替你选择，而是先给出四种风格。
+
+## 横屏适配与图标版工作流
+
+横屏口播默认把卡片放在**左上方**，根据真实人物、手势、字幕和演示内容确定安全区。横屏会重新排版，不直接缩小竖屏卡。
+
+- 每分钟约15组独立动效，其中重点PPT卡至少为`ceil(时长秒数/30)`组，计入总数。
+- 工具配核实的Logo，动作配语义图标，关系用流程或对比图；通用图标不能冒充官方Logo。
+- 要比较风格时，选相同4段内容，每种风格各4张，共**16张实拍合成图**，文案和原截图保持一致。
+- 先审核动效表与静态图，再制作动画，最终检查透明通道并交付桌面，保留旧版。
+
+![横屏四风格对比：工作空间三部分](assets/landscape/comparison-02.jpg)
+
+[查看全部16张横屏示例与卡片特写](assets/landscape/README.md) · [完整中英文工作流](references/landscape-workflow.md)
+
+```text
+用夏哥口播Skill处理这条横屏视频和SRT，卡片放在左上方，避开人物和字幕。
+先选4段内容，四种风格每种各做4张，让我比较。
+选好风格后，按时长制作完整动效表与静态预览，
+加入语义图标、相关工具Logo和重点PPT卡。
+等我确认后再输出透明底MOV，保存到桌面。
+```
 
 ## 预览示例
 
@@ -110,7 +131,7 @@ cp -R xiage-koubo-video-packaging ~/.codex/skills/
 ```text
 用 xiage-koubo-video-packaging，
 把这段脚本做成竖屏口播视频包装。
-先让我选风格，再做语义分割、动效表和 20 张静态预览。
+先让我选风格，再按时长做语义分割、动效表和静态预览。
 我审核后再生成透明底 MOV。
 ```
 
@@ -120,7 +141,7 @@ cp -R xiage-koubo-video-packaging ~/.codex/skills/
 Use xiage-koubo-video-packaging.
 Turn this script into a portrait video package.
 Let me choose the style first, then create the semantic motion table
-and about 20 static previews. Render the alpha MOV only after approval.
+and duration-based static previews. Render the alpha MOV only after approval.
 ```
 
 ## 仓库结构
@@ -160,4 +181,4 @@ xiage-koubo-video-packaging/
 
 ## 许可证
 
-[MIT](LICENSE)
+Skill代码与文档采用[MIT](LICENSE)。出镜示例图与第三方图标说明见[素材说明](assets/landscape/README.md#asset-notes--素材说明)。
